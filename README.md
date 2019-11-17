@@ -1,4 +1,17 @@
 # nlpreviz-docker
-test Docker image for NLPReViz on OpenJDK7
+Dockerfile for [NLPReViz](https://github.com/NLPReViz/) on OpenJDK7
+If you don't have [Docker](https://www.docker.com/), download and install from this link: https://docs.docker.com/get-docker/
 
-[NLPReViz](https://github.com/NLPReViz/)
+## Running NLPReViz using Docker:
+
+### Clone repository
+`git clone https://github.com/NLPReViz/nlpreviz-docker`
+`cd nlpreviz docker`
+
+### Build image from Dockerfile
+`docker build -t nlpreviz .`
+
+### Run the image
+`docker run -dit -p 8080:8080 --name emr_vis_web nlpreviz`
+
+Point your browser to <DOCKER_IP>:8080/emr-vis-web/app. Enter `username` and `password` as defaults to login. User `docker-machine ip` to confirm your local docker IP.
