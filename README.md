@@ -14,4 +14,4 @@ If you don't have [Docker](https://www.docker.com/), download and install from t
 ### Run the image
 `docker run -dit -p 8080:8080 --name emr_vis_web nlpreviz`
 
-Point your browser to <DOCKER_IP>:8080/emr-vis-web/app. Enter `username` and `password` as defaults to login. User `docker-machine ip` to confirm your local docker IP.
+Point your browser to <DOCKER_IP>:8080/emr-vis-web/app. Enter `username` and `password` as defaults to login. Use `docker-machine ip` to confirm your local docker IP. For customization deployments, refer to documentation available on the main [NLPReViz](https://github.com/NLPReViz/) projects.
