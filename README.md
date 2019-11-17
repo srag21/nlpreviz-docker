@@ -5,8 +5,10 @@ If you don't have [Docker](https://www.docker.com/), download and install from t
 ## Running NLPReViz using Docker:
 
 ### Clone repository
-`git clone https://github.com/NLPReViz/nlpreviz-docker`
-`cd nlpreviz docker`
+```
+git clone https://github.com/NLPReViz/nlpreviz-docker
+cd nlpreviz docker
+```
 
 ### Build image from Dockerfile
 `docker build -t nlpreviz .`
