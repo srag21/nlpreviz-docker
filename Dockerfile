@@ -19,7 +19,7 @@ RUN ln -s /opt/node-v6.11.3-linux-x64/bin/npm /usr/local/bin/npm
 RUN npm install grunt bower -g
 
 # install NLPReViz server
-RUN git clone https://github.com/NLPReViz/emr-nlp-server.git /opt/emr-nlp-server
+RUN git clone https://github.com/srag21/emr-nlp-server.git /opt/emr-nlp-server
 #/opt/emr-nlp-server
 RUN cd /opt/emr-nlp-server/ && ant resolve && env CATALINA_HOME=/opt/tomcat8 ant deploy
 
